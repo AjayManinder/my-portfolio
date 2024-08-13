@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About'; // Make sure the component name matches
+import Technologies from './components/Technologies';
+import Projects from './components/Projects';
+import Education from './components/Education';
+import AcademicProjects from './components/AcademicProjects';
+import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Home Section */}
+      <section id="home">
+        <Home />
+      </section>
+
+      {/* Professional Summary Section */}
+      <section id="professional-summary">
+        <About />
+      </section>
+
+      {/* Technologies Section */}
+      <section id="technologies">
+        <Technologies />
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects">
+        <Projects />
+      </section>
+
+      {/* Academic Experience Section */}
+      <section id="academic-experience">
+        <h2>Academic Experience</h2>
+        <AcademicProjects />
+      </section>
+
+      {/* Education Section */}
+      <section id="education">
+        <Education />
+      </section>
     </div>
   );
 }
