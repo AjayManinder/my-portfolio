@@ -5,7 +5,6 @@ import About from './components/About'; // Make sure the component name matches
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Education from './components/Education';
-import AcademicProjects from './components/AcademicProjects';
 import './styles.css';
 
 function App() {
@@ -32,12 +31,6 @@ function App() {
       {/* Projects Section */}
       <section id="projects">
         <Projects />
-      </section>
-
-      {/* Academic Experience Section */}
-      <section id="academic-experience">
-        <h2>Academic Experience</h2>
-        <AcademicProjects />
       </section>
 
       {/* Education Section */}
