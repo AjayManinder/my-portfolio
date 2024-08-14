@@ -14,8 +14,10 @@ function App() {
     <div>
 
 <Navbar />
+
+        <div id='home'>
         <Home />
-      
+        </div>
 
       <section id="professional-summary">
         <About />
