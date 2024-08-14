@@ -55,7 +55,7 @@ p {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 10px 20px;
   color: rgba(0, 0, 0, 0.175);
@@ -63,7 +63,7 @@ p {
   height: 50px;
   text-align: center;
   position: fixed;
-  width: 100%;
+  width: -webkit-fill-available;
   top: 0;
   z-index: 1000;
 }
@@ -103,7 +103,7 @@ p {
   color: rgb(255, 255, 255);
 }
 .home-component {
-  padding: 150px 20px;
+  padding: 120px 20px;
 }
 
 .home img {
@@ -127,6 +127,56 @@ p {
   margin: 10px 0;
 }
 
+.para span {
+  display: block;
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInLine 20.5s ease-out forwards; /* Total animation duration including the pause */
+  animation-iteration-count: infinite; /* Infinite loop */
+}
+
+/* Animating each line with delays */
+.para span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.para span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.para span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.para span:nth-child(4) { /* New child added */
+  animation-delay: 0.8s;
+}
+
+/* Hover effect to cancel animation and show full paragraph */
+.para:hover span {
+  animation: none; /* Cancel ongoing animation */
+  transform: translateX(0); /* Reset the transform */
+  opacity: 1; /* Show full opacity */
+}
+
+@keyframes slideInLine {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  14% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  57% {
+    transform: translateX(0); /* Maintain position */
+    opacity: 1; /* Stay visible */
+  }
+  100% {
+    transform: translateX(-100%); /* Reset for the loop */
+    opacity: 0; /* Fade out */
+  }
+}
 
 .professional-summary {
   background-color: #ecf0f1;

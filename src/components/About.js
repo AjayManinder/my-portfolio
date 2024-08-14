@@ -5,7 +5,7 @@ const About = () => {
     <section className="about">
       <h2>Professional Summary</h2>
       <p>
-        Dynamic and skilled Full-Stack Developer with over 3 years of experience in creating professional web applications. Specializing in front-end design and client/server development using React.js, HTML5, CSS3, JavaScript, and JSON.
+        Dynamic and skilled Full-Stack Developer with over 3 years of experience in creating professional web applications. Specializing in front-end design and client/server development using React JS, HTML5, CSS3, JavaScript, JSON, and Node JS.
         <br /><br />
         Proficient in cloud technologies, particularly Amazon Web Services (AWS), with expertise in developing single-page applications using React-Router.
         <br /><br />
