@@ -4,7 +4,7 @@ import { FaHome, FaUser, FaCode, FaGraduationCap, FaTools } from 'react-icons/fa
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <ul style={{ display: 'flex', justifyContent: 'center', listStyleType: 'none', margin: 0, padding: 0 }}>
+      <ul style={{ display: 'flex', justifyContent: 'center', listStyleType: 'none', margin: 0, padding: 0, flexDirection:'row' }}>
         <li style={{ margin: '0 15px' }}>
           <a href="#home">
             <FaHome /> Home
@@ -16,8 +16,23 @@ const Navbar = () => {
           </a>
         </li>
         <li style={{ margin: '0 15px' }}>
+          <a href="#technologies">
+            <FaTools /> Technologies
+          </a>
+        </li>
+        <li style={{ margin: '0 15px' }}>
           <a href="#projects">
             <FaCode /> Projects
+          </a>
+        </li>
+        <li style={{ margin: '0 15px' }}>
+          <a href="#academic">
+            <FaCode /> academic
+          </a>
+        </li>
+        <li style={{ margin: '0 15px' }}>
+          <a href="#personal">
+            <FaCode /> personal
           </a>
         </li>
         <li style={{ margin: '0 15px' }}>
@@ -25,11 +40,7 @@ const Navbar = () => {
             <FaGraduationCap /> Education
           </a>
         </li>
-        <li style={{ margin: '0 15px' }}>
-          <a href="#technologies">
-            <FaTools /> Technologies
-          </a>
-        </li>
+       
       </ul>
     </nav>
   );

@@ -3,13 +3,16 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <section className="home">
+    <div className="home">
+    
      {/* <img src={profileImg} alt="Profile" className="profile-img" /> */}
+     <div class="home-component">
       <h1>AJAY MANINDER</h1>
       <p>Full-Stack React Developer</p>
       <p>Email: ajyrdev@gmail.com</p>
       <p>Phone: +1-913-890-3323</p>
-    </section>
+      </div>
+    </div>
   );
 };
 

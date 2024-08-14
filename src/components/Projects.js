@@ -1,6 +1,5 @@
 import React from 'react';
-import AcademicProjects from './AcademicProjects';
-import PersonalProjects from './PersonalProjects';
+
 
 const Projects = () => {
   return (
@@ -52,8 +51,6 @@ const Projects = () => {
         </li>
       </ul>
 
-      <AcademicProjects />
-      <PersonalProjects />
     </section>
   );
 };
