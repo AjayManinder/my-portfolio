@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  background-color: black;
 }
 
 h1, h2, h3 {
@@ -31,7 +32,7 @@ section + section {
 }
 
 section .about{
-  background-image: url("https://e0.pxfuel.com/wallpapers/329/765/desktop-wallpaper-web-design-dark-developer.jpg");
+  background-image: url("./assets/about.png");
   background-size: cover;
   color: white;
 }
@@ -97,7 +98,7 @@ p {
 .home {
   text-align: center;
   
-  background-image: url("https://e0.pxfuel.com/wallpapers/128/627/desktop-wallpaper-information-technology-minimalist-tech.jpg");
+  background-image: url("./assets/home.png");
   background-size: cover;
   background-position: center;
   color: rgb(255, 255, 255);
@@ -192,7 +193,7 @@ p {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  background-image: url("https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686978_xUZgMeJv0Rj8a98jbfeHci8slCU8RdHF.jpg");
+  background-image: url("./assets/ProfilleBackImg.png");
   background-size: cover;
 }
 
@@ -211,7 +212,7 @@ p {
 }
 
 section .projects{
-  background-image: url("https://images.unsplash.com/photo-1572648151618-d54ad5890a57?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTF8fHxlbnwwfHx8fHw%3D");
+  background-image: url("./assets/projects.png");
   background-size: cover;
   background-position: right;
   color: white;
@@ -233,7 +234,7 @@ section .projects{
 }
 
 section .personal-projects{
-  background-image: url("https://i.pinimg.com/736x/1e/25/d3/1e25d302451b2b45bb1250293ae0b4ce.jpg");
+  background-image: url("./assets/personalprojects.png");
   background-size: cover;
   color: white;
 }
@@ -246,7 +247,7 @@ section .personal-projects{
 }
 
 section .academic-projects{
-  background-image: url("https://e0.pxfuel.com/wallpapers/329/765/desktop-wallpaper-web-design-dark-developer.jpg");
+  background-image: url("./assets/about.png");
   background-size: cover;
   color: rgb(255, 255, 255);
 }
@@ -260,7 +261,7 @@ section .academic-projects{
 }
 
 section .education{
-  background-image: url("https://c1.wallpaperflare.com/preview/167/210/341/book-dark-page-open.jpg");
+  background-image: url("./assets/education.png");
   background-size:auto;
   color: white;
 }

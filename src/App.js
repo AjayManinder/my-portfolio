@@ -1,46 +1,23 @@
 import React from 'react';
 
-import Home from './components/Home';
-import About from './components/About'; // Make sure the component name matches
-import Technologies from './components/Technologies';
-import Projects from './components/Projects';
-import Education from './components/Education';
-import PersonalProjects from './components/PersonalProjects';
-import AcademicProjects from './components/AcademicProjects';
+import ProfileCard from './components/ProfileCard/ProfileCard';
+import { Route, Routes } from 'react-router-dom';
+import Main from './components/Main';
 import './styles.css';
-import Navbar from './components/Navbar';
+
 function App() {
   return (
-    <div>
-
-<Navbar />
-
-        <div id='home'>
-        <Home />
-        </div>
-
-      <section id="professional-summary">
-        <About />
-      </section>
-
-      <section id="technologies">
-        <Technologies />
-      </section>
-
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="academic">
-        <AcademicProjects />
-      </section>
-
-      <section id="personal">
-        <PersonalProjects />
-      </section>
-      <section id="education">
-        <Education />
-      </section>
-    </div>
+   <div>
+     <Routes>
+          <Route path="/" element={<ProfileCard />} />
+          <Route
+            path="/main"
+            element={<Main />}
+          />
+         
+         
+        </Routes>
+   </div>
   );
 }
 

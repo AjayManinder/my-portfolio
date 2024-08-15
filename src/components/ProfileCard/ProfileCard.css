@@ -1,0 +1,215 @@
+.profile-container {
+  position: relative; /* Ensure positioning context for the pseudo-element */
+  display: flex;
+  flex-direction: row;
+ 
+  padding: 60px;
+  height: 88vh;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+
+}
+
+.profile-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/ProfileImage.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+  opacity: 0.3;
+  z-index: -1; 
+}
+
+  
+
+  .profile-card {
+    background: transparent;
+    border: 5px double #b0cbe6;
+    width: 300px;
+    max-height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .profile-image-container {
+    width: 280px;
+    height: 320px;
+    margin: 0 auto;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+  }
+  
+  .profile-name {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    font-weight: 600;
+  }
+  
+  .profile-title {
+    color: #ffffff;
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+ 
+  
+
+  .profile-content {
+    flex: 1;
+    margin-left: 40px;
+    padding: 30px;
+  }
+  
+  @keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Style for each letter to apply the wave animation */
+  .wave-animation {
+    display: inline-block;
+  }
+  
+  /* Applying the animation with varying delays for each letter */
+  .wave-animation:nth-child(1) { animation: wave 1s ease-in-out infinite; animation-delay: 0s; }
+  .wave-animation:nth-child(2) { animation: wave 1s ease-in-out infinite; animation-delay: 0.1s; }
+  .wave-animation:nth-child(3) { animation: wave 1s ease-in-out infinite; animation-delay: 0.2s; }
+  .wave-animation:nth-child(4) { animation: wave 1s ease-in-out infinite; animation-delay: 0.3s; }
+  .wave-animation:nth-child(5) { animation: wave 1s ease-in-out infinite; animation-delay: 0.4s; }
+  .wave-animation:nth-child(6) { animation: wave 1s ease-in-out infinite; animation-delay: 0.5s; }
+  .wave-animation:nth-child(7) { animation: wave 1s ease-in-out infinite; animation-delay: 0.6s; }
+  
+  h1 {
+    font-size: 4em;
+    margin: 0;
+  }
+  
+  .intro-text {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .resume-btn,
+  .portfolio-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .resume-btn {
+    background-color: #fff2b1;
+    color: black;
+  }
+  
+  .portfolio-btn {
+    background-color: #efc3c3;
+    color: black;
+    border: 2px solid black;
+  }
+  
+  .description {
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 1.1em;
+    color: white;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 900px) {
+    .profile-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-card {
+     
+      width: 220px;
+      max-height: 300px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .profile-image-container {
+      width: 200px;
+      height: 200px;
+      border-radius: 5%;
+      text-align: center;
+    }
+    .profile-content {
+      margin-left: 0;
+      text-align: center;
+    }
+    .intro-text {
+      font-size: 15px;
+      margin-top: 10px;
+     
+  }
+  
+  .description {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 15px;
+    
+  }
+
+  }
+  
+  @media (max-width: 460px) {
+  
+    .profile-card {
+     
+      width: 220px;
+      max-height: 300px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .profile-image-container {
+      width: 200px;
+      height: 200px;
+      border-radius: 5%;
+      text-align: center;
+    }
+
+    .profile-name {
+      font-size: 1em;
+    
+      font-weight: 600;
+  }
+
+  .intro-text {
+    font-size: 12px;
+    margin-top: 10px;
+    color: white;
+}
+
+.description {
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 12px;
+  color: white;
+}
+
+.profile-content {
+  
+  padding: 10px;
+}
+  }
