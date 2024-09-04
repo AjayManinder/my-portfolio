@@ -1,0 +1,149 @@
+{
+    "professionalProjects": [
+      {
+        "title": "Full-Stack React Developer | Lincoln Financial Group, NC",
+        "duration": "Sept 2022 – Present",
+        "details": [
+          "At Lincoln Financial Group, I worked as a Full-Stack React Developer on a claims processing application, utilizing technologies like HTML5, CSS3, JavaScript, React.js, and Redux to develop highly responsive web pages. I implemented Single Page Applications (SPAs) using React-Router to enhance client navigation and improve task performance.",
+          "In this role, I leveraged Redux for efficient state management, ensuring seamless data flow, and employed React Hooks to improve code readability and component reusability. I integrated third-party libraries like Material-UI to maintain a consistent design language and created reusable React components using both class-based and functional-based approaches.",
+          "The backend development involved Node.js and Express.js, where I built a robust RESTful API, and I managed MongoDB/NoSQL databases to store and execute CRUD operations on claims data. I also utilized AWS S3 to integrate assets into React components and used Axios for efficient data fetching from the server. To ensure high code quality, I applied TypeScript, performed unit testing with Jest, and validated APIs with Postman. I utilized debugging tools like Chrome Developer Tools to resolve issues promptly and employed Git for version control and JIRA for effective project management and collaboration."
+        ],
+        "repoLink": null,
+        "screenshots": null,
+        "screenshots1": null,
+        "additional_Details1":[],
+         "additional_Details2":[],
+        "video": null
+      },
+      {
+        "title": "React Developer | Vedas Labs, India",
+        "duration": "Mar 2020 – July 2021",
+        "details": [
+          "Developed and optimized web and mobile applications using HTML5, CSS3, JavaScript, and React, ensuring a seamless and responsive user experience across various platforms. Designed and implemented responsive layouts for both mobile and desktop interfaces, utilizing React-Router to create single-page applications with enhanced navigation. Leveraged React’s features, including props, states, and hooks like useState, to build dynamic and interactive UI components.",
+          "Played a key role in developing and integrating React Native view components for mobile applications. Employed Redux for centralized state management and utilized REST APIs with Node.js and MongoDB for backend operations, including CRUD functionality. Maintained a clean and updated codebase with Git version control, emphasizing cross-browser compatibility and code reusability."
+        ],
+        "repoLink": null,
+        "screenshots": null,
+        "additional_Details1":[" "],
+         "additional_Details2":[" "],
+        "video": null
+      }
+    ],
+    "academicProjects": [
+      {
+        "title": "College Management Portal (MERN Stack)",
+        "description": "Developed a College Management Portal application featuring secure user authentication and authorization, utilizing JWT tokens for session management and access control Using ReactJS, NodeJS, and MongoDB.",
+        "details": [
+          "Developed a robust login process that involves validating user credentials and generating JWT tokens to facilitate secure access to application resources.",
+          "Implemented secure user authentication by hashing passwords with bcryptjs, ensuring that user passwords are stored securely and not in plain text.",
+          "Incorporated role-based access control by associating users with roles and leveraging this information to enforce access permissions. This allows for differentiated access based on user roles",
+          "Implemented JWT verification in middleware to check the validity of tokens on protected routes, ensuring that only users with valid tokens can interact with secured resources.",
+          "Developed a login page for users that dynamically directs them to role-specific pages upon successful authentication, ensuring appropriate access based on user roles.",
+          "Created Grid layouts, used various libraries like MaterialUI, react-router, axios, react-icons, jsonwebtoken, mongoose etc."
+        ],
+        "screenshots": ["/images/a1.png","/images/a2.png","/images/a3.png",
+"/images/a4.png",
+"/images/a5.png"
+ ],
+        "additional_Details1": [
+          "Implemented a dynamic login system that directs users to role-specific dashboards and functionalities. Below we can see both admin and teacher roles where for admins Created a comprehensive dashboard for admins to view and manage all students and teachers.",
+          "Enabled full CRUD capabilities for students, teachers, and users, including role assignment and user creation and Admins have unrestricted access to all system features and data.",
+          "Teacher Role: Developed a view for teachers to manage and see only their assigned students based on subject enrollment. Teacher have the restricted access they can't perform any operations"
+        ],
+        "screenshots1": [
+          "/images/a17.png",
+          "/images/a6.png",
+          "/images/a7.png",
+          "/images/a8.png","/images/a9.png",
+          "/images/a10.png",
+          "/images/a11.png","/images/a12.png",
+          "/images/a13.png"],
+        "additional_Details2": [
+        "Student role: So based on the email and password if the authentication is succesfull and based on the rold id and user id the particular student will be logged In.",
+        "Afer successful login it will navigate to a student dashboard with tabs for viewing personal details, subjects enrolled, year and semester information, and attendance and aslo displays the student related information detials etc.",
+        "Implemented functionality for students to register for subjects and view their enrollments and students have restricted access to personal information and functionalities relevant to each student."
+        ],
+       "screenshots2": ["/images/a14.png",
+"/images/a15.png",
+"/images/a16.png",
+"/images/a18.png",
+"/images/a19.png","/images/a20.png","/images/a21.png","/images/a22.png"],
+        "repoLink": null,
+        "video": null
+      },
+      {
+        "title": "ChatBot Application using GPT Model(Python & ReactJs)",
+        "description": "Developed a comprehensive chatbot application with a Flask-based backend and a React frontend. The backend integrates the microsoft/DialoGPT-medium model using the Transformers library to handle natural language processing and generate dynamic responses.",
+        "details": [
+          "It includes tokenization and response generation, and CORS support ensures smooth frontend-backend communication. ",
+          "On the frontend, a React-based UI was created with state management and dynamic content updating, leveraging Axios for real-time API requests. ",
+          " The interface features interactive components and responsive styling to deliver an engaging user experience."
+        ],
+        "repoLink": null,
+        "screenshots1": ["/images/b1.png","/images/b2.png","/images/b3.png",
+"/images/b4.png"
+ ],
+        "screenshots": null,
+         "screenshots2": null,
+         "additional_Details1":[
+          "The backend of the application was developed using Flask, a lightweight web framework, to build a server capable of handling chatbot interactions. To enable seamless communication between the frontend and backend, Flask-CORS was utilized to allow Cross-Origin Resource Sharing.", 
+          "The Hugging Face Transformers library was integrated to work with pre-trained transformer models, specifically the microsoft/DialoGPT-medium model, which is optimized for generating human-like responses in dialogue settings.",
+          "The application utilizes a tokenizer to convert user input into tokens that the model can process, and then decodes the output tokens back into human-readable text. An API endpoint, /api/chatbot, was created with a POST method to receive user input in JSON format. ",
+          "The input is tokenized, and an end-of-sequence token is added to ensure proper response generation. The model generates a response with a maximum length of 100 tokens, using a temperature setting of 0.7 to balance creativity and coherence. The final response is constructed by stripping away the user's input, leaving only the bot's message, which is then returned in JSON format."
+         ],
+         "additional_Details2":[
+          "The frontend of the application was developed using React, focusing on creating a user-friendly interface for the chatbot. ",
+          "The app manages chat messages and user input using state, with Axios handling communication with the backend. ",
+          "The interface includes a chat display that automatically scrolls to show the latest messages and an input section where users can type and send their messages."
+         ],
+        "video": null
+      },
+      {
+        "title": "Movie Suggestion Application (Automatic Deployment using AWS Amplify)",
+        "description": "Developed a single-page movie suggestion application using an open-source API with a collection of movies.",
+        "details": [
+          "Integrated the app with AWS Amplify and added the working repository to the AWS Amplify console for automatic deployment.",
+          "Created an IAM role using CI/CD pipelines for automatic deployments upon code commits to GIT.",
+          "Implemented a search bar for displaying and suggesting results based on keyword searches.",
+          "Used the Axios library for making API calls.",
+          "Developed a responsive page with a solid understanding of CSS and CSS grid layout for the front-end view."
+        ],
+        "repoLink": null,
+        "screenshots": ["/images/c1.png","/images/c2.png","/images/c3.png"
+         ],
+         "screenshots1": null,
+         "additional_Details1":[],
+         "additional_Details2":[],
+        "video": null
+      }
+    ],
+    "personalProjects": [
+      {
+        "title": "UPAYA (Mobile Application using React-Native)",
+        "description": "A mobile application providing information about government schemes available to the public, collected from various government portals.",
+        "details": [
+          "OverView : Governments across the globe making so many policies and schemes to help the people of that country in all aspects of their day to day life. But when we look at the ground level, how many people really know about the government policies or schemes which are created for them?",
+          "In this electronic age with great advancement in Internet and Mobile technology and usage by the people across the globe, one of the best way to fill this gap between the government and people is to provide a platform where people can view the schemes and policies in their hands.",
+          "Schemes/Policies at People Hand? Yes, if we look at the mobile revolution, most of the people started using the smartphones; farmers, small or medium scale business people, all levels of employees are included in this list even in developing countries like India."
+        ],
+        "repoLink": null,
+        "screenshots": ["/images/d1.png",""
+         ],
+        "screenshots1": null,
+        "screenshots2": null,
+        "additional_Details1":[
+          "The app offers real-time data on these policies, which are updated by government departments via a centralized server. Each state has its own customized version of the app, and users can access information in various formats, including text, audio, and video.",
+          "On installation, users are prompted to select their state and language, which can be customized based on their geo-location. The app's home page features options to view schemes from either the state or central government, with department-specific details and multimedia content for each scheme.",
+          "In the web application counterpart, authorized department users can manage policies, users, and departments. The web interface allows the creation, editing, and soft deletion of policies, departments, and users, with role-based access control to ensure secure policy management. The system facilitates efficient policy administration with real-time updates."
+        ],
+         "additional_Details2":[
+          "For converting speech into text, useful for accessibility and multilingual support used 'react-native-voice' library. It allows users to interact with the app via voice commands or listen to audio in a converted textual format.",
+          "For embedding and playing video content used 'react-native-video' library. This allows users to stream and control video content for schemes and policies.",
+          "We used the react-native-snap-carousel library for implementing the carousel feature used 'react-native-snap-carousel' library. This allows users to smoothly slide through different departments and schemes, enhancing the interactive experience on mobile.",
+          "For handling large datasets in the web application, we used ag-Grid for displaying and managing the policies and schemes used 'ag-Grid' library. This provides efficient sorting, filtering, and pagination, ensuring optimal performance when dealing with a large number of entries."
+         ],
+        "video": null
+      }
+    ]
+  }
+  

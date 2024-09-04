@@ -1,0 +1,11 @@
+
+/* Academic projects */
+
+.project-load-details-button{
+    background-color: #b6dae3;
+}
+
+.project-load-details-button:hover{
+    background-color: #9aa8d0;
+    cursor: pointer;
+}
