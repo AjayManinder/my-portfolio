@@ -49,9 +49,9 @@
     margin-bottom: 20px;
   }
   
-  .carousel-slide img {
+  .carousel-slide .img {
     width: 100%;
-    height: auto;
+    height: 500px;
   }
   
  .list_padding{

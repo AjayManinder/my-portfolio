@@ -71,7 +71,7 @@ const settings = {
             <Slider {...settings}>
               {project.screenshots.map((screenshot, index) => (
                 <div key={index} className="carousel-slide">
-                  <img src={screenshot} alt={`Screenshot ${index + 1}`} />
+                  <img className="img" src={screenshot} alt={`Screenshot ${index + 1}`} />
                 </div>
               ))}
             </Slider>
@@ -89,7 +89,7 @@ const settings = {
             <Slider {...settings}>
               {project.screenshots1.map((screenshot1, index) => (
                 <div key={index} className="carousel-slide">
-                  <img src={screenshot1} alt={`Screenshot ${index + 1}`} />
+                  <img className="img" src={screenshot1} alt={`Screenshot ${index + 1}`} />
                 </div>
               ))}
             </Slider>
@@ -107,7 +107,7 @@ const settings = {
             <Slider {...settings}>
               {project.screenshots2.map((screenshot2, index) => (
                 <div key={index} className="carousel-slide">
-                  <img src={screenshot2} alt={`Screenshot ${index + 1}`} />
+                  <img className="img" src={screenshot2} alt={`Screenshot ${index + 1}`} />
                 </div>
               ))}
             </Slider>
