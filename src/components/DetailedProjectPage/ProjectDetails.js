@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import projectsData from '../ProjectsData/projectsData.json'; 
 import "./ProjectDetails.css";
@@ -11,6 +11,11 @@ import Slider from 'react-slick';
 
 
 const ProjectDetails = () => {
+
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1); 
