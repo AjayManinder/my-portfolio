@@ -9,8 +9,8 @@ const Home = () => {
      <div class="home-component">
       <h1>AJAY MANINDER</h1>
       <p>Full-Stack React Developer</p>
-      <p>Email: ajyrdev@gmail.com</p>
-      <p>Phone: +1-913-890-3323</p>
+      <p>Email: ajaymaninder1111@gmail.com</p>
+      <p>Phone: +1-816-872-8004</p>
 
       <br/><br/><br/><br/>
       <p className='para'>
