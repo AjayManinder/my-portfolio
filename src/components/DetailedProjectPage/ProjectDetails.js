@@ -13,13 +13,19 @@ import Slider from 'react-slick';
 const ProjectDetails = () => {
 
   useEffect(() => {
-    // Scroll to the top when the component mounts
-    window.scrollTo(0, 0);
+    const scrollTimeout = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100); // Add a slight delay to ensure DOM is ready
+  
+    return () => clearTimeout(scrollTimeout); // Cleanup timeout
   }, []);
   const navigate = useNavigate();
+  // Navigation: Only navigate back without fallback
   const goBack = () => {
+    console.log("go back")
     navigate(-1); 
   };
+
   const { category, id } = useParams();
   const projectIndex = parseInt(id, 10);
 
@@ -48,7 +54,13 @@ const settings = {
   slidesToShow: 1, 
   slidesToScroll: 1, 
   prevArrow: <RiArrowLeftWideLine className="arrow arrow-left" />,
-  nextArrow: <RiArrowRightWideFill style={{ fontSize: '32px' }} className="arrow arrow-right" /> 
+  nextArrow: <RiArrowRightWideFill style={{ fontSize: '32px' }} className="arrow arrow-right" /> ,
+  beforeChange: (currentSlide, nextSlide) => {
+    // Remove the currentSlide and slideCount props from the DOM element
+    const sliderElement = document.querySelector('.slick-slider');
+    sliderElement.removeAttribute('currentSlide');
+    sliderElement.removeAttribute('slideCount');
+  },
 };
 
   return (
@@ -58,11 +70,11 @@ const settings = {
       <h2>{project.title}</h2>
        </div>
       <h4>{project.description}</h4>
-      <pl>
+      <ul>
         {project.details.map((detail, index) => (
           <li className='list_padding' key={index}>{detail}</li>
         ))}
-      </pl>
+      </ul>
       <div>
       {project.repoLink && (
         <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
@@ -83,11 +95,11 @@ const settings = {
           </div>
         )}
       </div>
-      <pl>
+      <ul>
         {project.additional_Details1.map((additional_Details1, index) => (
           <li className='list_padding' key={index}>{additional_Details1}</li>
         ))}
-      </pl>
+      </ul>
       <div>
       {project.screenshots1 && (
           <div className="carousel-container">
@@ -101,11 +113,11 @@ const settings = {
           </div>
         )}
       </div>
-      <pl>
+      <ul>
         {project.additional_Details2.map((additional_Details2, index) => (
           <li className='list_padding' key={index}>{additional_Details2}</li>
         ))}
-      </pl>
+      </ul>
       <div>
       {project.screenshots2 && (
           <div className="carousel-container">

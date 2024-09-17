@@ -7,7 +7,14 @@ const Home = () => {
     
      {/* <img src={profileImg} alt="Profile" className="profile-img" /> */}
      <div className="home-component">
-      <div>Hi, I'm</div>
+      <div className="wave-text">
+          <span className="wave-animation">H</span>
+          <span className="wave-animation">I,</span>
+          <span className="wave-animation">&nbsp;</span>
+          <span className="wave-animation"> I'</span>
+          <span className="wave-animation">m</span>
+          
+        </div>
       <h1>AJAY MANINDER</h1>
       <br/><br/>
       <p>Full-Stack React Developer</p>

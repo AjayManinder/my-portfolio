@@ -6,7 +6,7 @@ const About = () => {
       
     <section className="about">
     < div className='lists'>
-      <p>
+      <span>
         Dynamic and skilled Full-Stack Developer with over 3 years of experience in creating professional web applications. Specializing in front-end design and client/server development using React JS, HTML5, CSS3, JavaScript, JSON, and Node JS.
         <br /><br />
         Proficient in cloud technologies, particularly Amazon Web Services (AWS), with expertise in developing single-page applications using React-Router.
@@ -23,7 +23,7 @@ const About = () => {
           <li>Salesforce Knowledge: Familiarity with Salesforce.</li>
           <li>Team Collaboration: Effective team player with high adaptability to new technologies.</li>
         </ul>
-      </p>
+      </span>
       </div>
     </section>
    

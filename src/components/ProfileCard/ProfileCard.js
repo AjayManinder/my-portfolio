@@ -1,22 +1,30 @@
-import React from 'react';
+import React, { useLayoutEffect, useEffect,useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ProfileCard.css'; 
 import Resume from "../../assets/Resume.docx";
 import img from "../../assets/profile.jpg";
 
-
 const ProfileCard = () => {
-  console.log("/assets/profile.jpeg");
-const navigate = useNavigate();
-//const img = "https://collegeportal.s3.amazonaws.com/1-1709910854155-image.jpg";
+  const navigate = useNavigate();
+  const [showProfile, setShowProfile] = useState(false);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowProfile(true); 
+    }, 1000); // 
 
-const PortfolioButtonClick=()=>{
-navigate("main");
-}
+    return () => clearTimeout(timer); 
+  }, []);
+  const PortfolioButtonClick = () => {
+    navigate("main");
+  };
 
   return (
     <div className="profile-container">
-      <div className="profile-card">
+      {!showProfile && <div className="bang-animation">BANG!</div>}
+      <div className={`profile-card ${showProfile ? 'show-profile' : ''}`}>
         <div className="profile-image-container">
           <img
             className="profile-image"
@@ -24,23 +32,23 @@ navigate("main");
             alt="Ajay"
           />
         </div>
-        <h2 className="profile-name">Ajay Maninder</h2>
+        <h2 className='profile-name'>Ajay Maninder</h2>
         <span className="profile-title">Full-Stack Developer</span>
       </div>
 
-      <div className="profile-content">
-      <h1 className="wave-text">
-    <span className="wave-animation">H</span>
-    <span className="wave-animation">e</span>
-    <span className="wave-animation">l</span>
-    <span className="wave-animation">l</span>
-    <span className="wave-animation">o</span>
-    <span className="wave-animation">!</span>
-  </h1>
+      <div className={`profile-content ${showProfile ? 'show-profile' : ''}`}>
+        <h1 className="wave-text">
+          <span className="wave-animation">H</span>
+          <span className="wave-animation">e</span>
+          <span className="wave-animation">l</span>
+          <span className="wave-animation">l</span>
+          <span className="wave-animation">o</span>
+          <span className="wave-animation">!</span>
+        </h1>
         <p className="intro-text">
-        I’m a full-stack developer with a passion for crafting end-to-end solutions that drive innovation and efficiency. 
-        I specialize in building responsive web applications using modern front-end frameworks and scalable back-end architectures. 
-        With a focus on performance and user experience.
+          I’m a full-stack developer with a passion for crafting end-to-end solutions that drive innovation and efficiency. 
+          I specialize in building responsive web applications using modern front-end frameworks and scalable back-end architectures. 
+          With a focus on performance and user experience.
         </p>
         <div className="buttons">
           <a className="resume-btn" href={Resume} download="Ajay_Resume.docx">RESUME</a>
