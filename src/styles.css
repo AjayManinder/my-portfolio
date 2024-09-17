@@ -6,19 +6,37 @@ body {
   color: #333;
   background-color: black;
 }
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* overflow: hidden; Prevent unnecessary scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
+
+}
+
+.App {
+  min-height: 100vh; /* Ensure the App takes at least the full viewport height */
+  position: relative;
+}
 
 h1, h2, h3 {
   color: #5187be;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 20px; 
+}
+h2{
+  font-size:40px;
 }
 
 section {
-  padding: 20px;
+  padding: 10px;
   margin: 10px auto;
   max-width: 1100px;
-  background: #fff;
-  background-color: #dce7ef;
+  
+  /* background: #fff;
+  background-color: #dce7ef; */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -27,13 +45,12 @@ section:hover {
   transform: translateY(-5px);
 }
 
-section + section {
+/* section + section {
   border-top: 2px solid #ddd;
-}
+} */
 
 section .about{
-  background-image: url("./assets/about.png");
-  background-size: cover;
+  /* background-image: url("./assets/about.png"); */
   color: white;
 }
 
@@ -98,7 +115,7 @@ p {
 .home {
   text-align: center;
   
-  background-image: url("./assets/home.png");
+  /* background-image: url("./assets/home.png"); */
   background-size: cover;
   background-position: center;
   color: rgb(255, 255, 255);
@@ -119,8 +136,8 @@ p {
 }
 
 .home h1 {
-  font-size: 2.5em;
-  margin-bottom: 100px;
+  font-size: 4.5em;
+  margin: 0px;
 }
 
 .home p {
@@ -193,8 +210,6 @@ p {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  background-image: url("./assets/ProfilleBackImg.png");
-  background-size: cover;
 }
 
 .technologies li {
@@ -212,9 +227,7 @@ p {
 }
 
 section .projects{
-  background-image: url("./assets/projects.png");
-  background-size: cover;
-  background-position: right;
+ 
   color: white;
 }
 
@@ -228,10 +241,15 @@ section .projects{
 .projects li {
   margin-bottom: 15px;
 }
+.lists{
+  border: 1px solid #2980b9;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.352);
+  padding: 30px;
+}
 
 section .personal-projects{
-  background-image: url("./assets/personalprojects.png");
-  background-size: cover;
+ 
   color: white;
 }
 
@@ -243,8 +261,7 @@ section .personal-projects{
 }
 
 section .academic-projects{
-  background-image: url("./assets/about.png");
-  background-size: cover;
+
   color: rgb(255, 255, 255);
 }
 
@@ -257,8 +274,7 @@ section .academic-projects{
 }
 
 section .education{
-  background-image: url("./assets/education.png");
-  background-size:auto;
+  
   color: white;
 }
 

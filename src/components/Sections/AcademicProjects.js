@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 import "./section.css";
 const AcademicProjects = () => {
   return (
+<>
+    <h2>Academic Projects</h2>
     <section className="academic-projects">
-      <h2>Academic Projects</h2>
       <ul>
         {projectsData.academicProjects.map((project, index) => (
-          <li key={index}>
+          <li className='lists' key={index}>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <ul>
@@ -23,6 +24,7 @@ const AcademicProjects = () => {
         ))}
       </ul>
     </section>
+    </>
   );
 };
 

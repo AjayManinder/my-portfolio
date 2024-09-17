@@ -7,11 +7,16 @@ import Projects from './components/Sections/Projects';
 import AcademicProjects from './components/Sections/AcademicProjects';
 import PersonalProjects from './components/Sections/PersonalProjects';
 import ProjectDetails from './components/DetailedProjectPage/ProjectDetails';
+import StarsBackground from './components/StarBackground/StarBackground';
+import CustomCursor from './components/CustomCursor/CustomCursor';
 import './styles.css';
 
 function App() {
   return (
-   <div>
+   <div className='App'>
+    <CustomCursor/>
+    <StarsBackground/>
+    
      <Routes>
           <Route path="/" element={<ProfileCard />} />
           <Route

@@ -2,8 +2,10 @@ import React from 'react';
 
 const About = () => {
   return (
+    <><h2>Professional Summary</h2>
+      
     <section className="about">
-      <h2>Professional Summary</h2>
+    < div className='lists'>
       <p>
         Dynamic and skilled Full-Stack Developer with over 3 years of experience in creating professional web applications. Specializing in front-end design and client/server development using React JS, HTML5, CSS3, JavaScript, JSON, and Node JS.
         <br /><br />
@@ -22,7 +24,10 @@ const About = () => {
           <li>Team Collaboration: Effective team player with high adaptability to new technologies.</li>
         </ul>
       </p>
+      </div>
     </section>
+   
+    </>
   );
 };
 

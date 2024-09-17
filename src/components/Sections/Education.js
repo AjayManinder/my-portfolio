@@ -4,6 +4,7 @@ const Education = () => {
   return (
     <section className="education">
       <h2>Education</h2>
+      < div className='lists'>
       <ul>
         <li>
           <h3>Master's in Computer Science</h3>
@@ -14,6 +15,7 @@ const Education = () => {
           <p>Saveetha School of Engineering, India, CGPA: 8.063/10, 2020</p>
         </li>
       </ul>
+      </div>
     </section>
   );
 };

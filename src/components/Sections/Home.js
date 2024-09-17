@@ -6,8 +6,10 @@ const Home = () => {
     <div className="home">
     
      {/* <img src={profileImg} alt="Profile" className="profile-img" /> */}
-     <div class="home-component">
+     <div className="home-component">
+      <div>Hi, I'm</div>
       <h1>AJAY MANINDER</h1>
+      <br/><br/>
       <p>Full-Stack React Developer</p>
       <p>Email: ajaymaninder1111@gmail.com</p>
       <p>Phone: +1-816-872-8004</p>
