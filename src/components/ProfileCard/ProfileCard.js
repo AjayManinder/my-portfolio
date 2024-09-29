@@ -23,7 +23,7 @@ const ProfileCard = () => {
 
   return (
     <div className="profile-container">
-      {!showProfile && <div className="bang-animation">BANG!</div>}
+      {!showProfile && <div className="bang-animation">WELCOME!</div>}
       <div className={`profile-card ${showProfile ? 'show-profile' : ''}`}>
         <div className="profile-image-container">
           <img
