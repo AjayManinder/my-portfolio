@@ -51,7 +51,7 @@ const ProfileCard = () => {
           With a focus on performance and user experience.
         </p>
         <div className="buttons">
-          <a className="resume-btn" href={Resume} download="Ajay_Resume.docx">RESUME</a>
+          <a className="resume-btn" href={Resume} download="Ajay_Resume">RESUME</a>
           <button className="portfolio-btn" onClick={PortfolioButtonClick}>PORTFOLIO</button>
         </div>
         <p className="description">

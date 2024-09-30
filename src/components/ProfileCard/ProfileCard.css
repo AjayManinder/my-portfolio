@@ -114,20 +114,22 @@ h1 {
   padding: 10px 20px;
   font-size: 1em;
   margin-right: 10px;
-  border: none;
+  font-weight: bold;
+  border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
 }
 
 .resume-btn {
-  background-color: #fff2b1;
-  color: black;
+  background-color: none;
+  border: 2px solid rgb(240, 129, 129);
+  color: white;
 }
 
 .portfolio-btn {
-  background-color: #efc3c3;
-  color: black;
-  border: 2px solid black;
+  background-color: rgba(245, 222, 179, 0);
+  color: white;
+  border: 2px solid rgb(11, 167, 245);
 }
 
 .description {
