@@ -1,4 +1,6 @@
 import React, { useLayoutEffect, useEffect,useState } from 'react';
+import { FaCloudDownloadAlt } from "react-icons/fa";
+import { GrLinkNext } from "react-icons/gr";
 import { useNavigate } from 'react-router-dom';
 import './ProfileCard.css'; 
 import Resume from "../../assets/Resume.docx";
@@ -51,8 +53,8 @@ const ProfileCard = () => {
           With a focus on performance and user experience.
         </p>
         <div className="buttons">
-          <a className="resume-btn" href={Resume} download="Ajay_Resume">RESUME</a>
-          <button className="portfolio-btn" onClick={PortfolioButtonClick}>PORTFOLIO</button>
+          <a className="resume-btn" href={Resume} download="Ajay_Resume">RESUME <FaCloudDownloadAlt/></a>
+          <button className="portfolio-btn" onClick={PortfolioButtonClick}>PORTFOLIO <GrLinkNext /></button>
         </div>
         <p className="description">
           I’m a highly competent, creative professional who’s eager to join a challenging

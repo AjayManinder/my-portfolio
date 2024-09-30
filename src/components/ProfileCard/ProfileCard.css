@@ -118,17 +118,20 @@ h1 {
   border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
+  display: inline-flex;
 }
 
 .resume-btn {
   background-color: none;
   border: 2px solid rgb(240, 129, 129);
   color: white;
+  gap:10px;
 }
 
 .portfolio-btn {
   background-color: rgba(245, 222, 179, 0);
   color: white;
+  gap:5px;
   border: 2px solid rgb(11, 167, 245);
 }
 
