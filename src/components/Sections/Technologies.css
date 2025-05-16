@@ -1,0 +1,120 @@
+.technologies {
+    height: 90vh;
+  padding: 1rem 0.5rem;
+  background: transparent;
+
+
+.technologies h2 {
+  font-size: 2.0rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1e293b;
+  position: relative;
+}
+.tech-heading {
+    font-size: 2.0rem;
+    font-weight: 800;
+    color: #5187be;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+.technologies h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  border-radius: 2px;
+}
+
+.tech-category {
+  margin-bottom: 0.1rem;
+  background-color: #2d2e3022;
+    padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+}
+
+.tech-category h3 {
+  font-size: 1.5rem;
+  color: #334155;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  text-transform: capitalize;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.tech-popup {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffffee;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  z-index: 10;
+  width: 120px;
+  text-align: center;
+}
+
+.skill-bar {
+  width: 100%;
+  background: #e0e0e0;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.skill-progress {
+  height: 100%;
+  background: #4CAF50;
+  border-radius: 10px 0 0 10px;
+}
+
+
+.tech-box {
+  background-color: #e2e8f0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: fit-content;
+  max-width: 180px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tech-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .tech-box {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    max-width: 150px;
+  }
+
+  .tech-grid {
+    gap: 0.6rem;
+  }
+
+  .tech-category h3 {
+    font-size: 1.25rem;
+  }
+}

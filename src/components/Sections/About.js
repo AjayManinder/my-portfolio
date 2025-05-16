@@ -1,33 +1,72 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { CheckCircle } from 'lucide-react';
+import './section.css';
+
+const expertiseList = [
+  "Building responsive UI with React.js, Next.js, and TypeScript.",
+  "Performance optimization via lazy loading, caching, and code splitting.",
+  "API integration and state management with Redux and Context API.",
+  "Accessibility (WCAG 2.1), cross-browser support, mobile-first design.",
+  "Test-Driven Development using Jest and API testing with Postman.",
+  "CI/CD pipeline enhancement with GitHub Actions and Jenkins.",
+  "Cloud-native deployment on AWS: EC2, Lambda, S3, Amplify.",
+  "Version control with Git and GitHub, including PR workflows.",
+];
 
 const About = () => {
   return (
-    <><h2>Professional Summary</h2>
-      
-    <section className="about">
-    < div className='lists'>
-      <span>
-        Dynamic and skilled Full-Stack Developer with over 3 years of experience in creating professional web applications. Specializing in front-end design and client/server development using React JS, HTML5, CSS3, JavaScript, JSON, and Node JS.
-        <br /><br />
-        Proficient in cloud technologies, particularly Amazon Web Services (AWS), with expertise in developing single-page applications using React-Router.
-        <br /><br />
-        Key Expertise:
-        <ul>
-          <li>Front-End Development: Proficient in designing and developing responsive web pages using Media Queries, CSS Grid Layout, and Flexbox.</li>
-          <li>React.js Mastery: Extensive experience with React.js components, forms, events, keys, react-router, and Redux for state management.</li>
-          <li>Backend Development: Developed and maintained backend server applications using Node.js.</li>
-          <li>Mobile Development: Experience in developing mobile applications using React Native.</li>
-          <li>Testing and Code Quality: Skilled in using Jest for unit testing and Postman for API testing.</li>
-          <li>Cloud and Deployment: Expertise in deploying web and mobile applications using AWS Amplify.</li>
-          <li>Authentication and Authorization: Experience with AWS Cognito.</li>
-          <li>Salesforce Knowledge: Familiarity with Salesforce.</li>
-          <li>Team Collaboration: Effective team player with high adaptability to new technologies.</li>
-        </ul>
-      </span>
-      </div>
-    </section>
-   
-    </>
+    <motion.section
+      className="about-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2 }}
+    >
+      <motion.div
+        className="about-card"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.4 }}
+      >
+        <motion.h2
+          className="about-heading"
+          whileHover={{ scale: 1.05, color: "#a5b4fc" }}
+        >
+       Professional Summary  
+        </motion.h2>
+
+        <motion.p className="about-description">
+          Frontend Software Engineer with 3+ years of experience designing, developing, and maintaining scalable, high-performance web applications and user interfaces using React.js, Next.js, and TypeScript. Skilled in building large-scale frontend architectures with a focus on performance optimization through code splitting, lazy loading, and caching strategies. Proven ability to deliver production-ready features for high-traffic platforms, improving customer experience by 30% through responsive design, cross-browser compatibility, and WCAG 2.1 accessibility compliance. Experienced in API integration, test-driven development (TDD) using Jest and Postman, and enhancing CI/CD pipelines, reducing deployment times by up to 40%. Proficient in cloud-native deployments on AWS (EC2, Lambda, S3) and version control using Git.
+        </motion.p>
+
+        <motion.ul
+          className="expertise-list"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.1,
+              }
+            }
+          }}
+        >
+          {expertiseList.map((item, idx) => (
+            <motion.li
+              key={idx}
+              className="expertise-item"
+              variants={{
+                hidden: { opacity: 0, x: -20 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <CheckCircle className="check-icon" size={20} />
+              <span>{item}</span>
+            </motion.li>
+          ))}
+        </motion.ul>
+      </motion.div>
+    </motion.section>
   );
 };
 

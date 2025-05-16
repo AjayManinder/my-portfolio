@@ -7,6 +7,7 @@ import Education from './Education';
 import PersonalProjects from './PersonalProjects';
 import AcademicProjects from './AcademicProjects';
 import Navbar from './Navbar';
+import FeedbackForm from './FeedbackForm';
 const Main = () => {
   return (
     <div>
@@ -37,6 +38,9 @@ const Main = () => {
           </section>
           <section id="education">
             <Education />
+          </section>
+          <section id="feedback">
+           <FeedbackForm/>
           </section>
         </div>
   )

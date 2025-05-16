@@ -48,18 +48,18 @@ const ProfileCard = () => {
           <span className="wave-animation">!</span>
         </h1>
         <p className="intro-text">
-          I’m a full-stack developer with a passion for crafting end-to-end solutions that drive innovation and efficiency. 
-          I specialize in building responsive web applications using modern front-end frameworks and scalable back-end architectures. 
-          With a focus on performance and user experience.
+        "I’m a full-stack developer passionate about building end-to-end solutions that drive innovation and efficiency. 
+        I specialize in developing responsive web applications using modern front-end frameworks and scalable back-end architectures. 
+        With expertise in AWS Cloud and machine learning, I design and deploy high-performance, cloud-native applications optimized for scalability and user experience."
         </p>
         <div className="buttons">
           {/* <a className="resume-btn" href={Resume} download="Ajay_Resume">RESUME <FaCloudDownloadAlt/></a> */}
           <button className="portfolio-btn" onClick={PortfolioButtonClick}>PORTFOLIO <GrLinkNext /></button>
         </div>
         <p className="description">
-          I’m a highly competent, creative professional who’s eager to join a challenging
-          and passionate team. As a self-starter and quick learner, I’m ready to exceed
-          expectations. I can assure you I will bring fresh ideas to the table.
+        I’m a creative and driven professional eager to contribute to a passionate team. As a self-starter and fast learner, 
+        I embrace challenges and always aim to exceed expectations. 
+        I bring fresh ideas, a problem-solving mindset, and a commitment to delivering results.
         </p>
       </div>
     </div>

@@ -10,6 +10,8 @@ import ProjectDetails from './components/DetailedProjectPage/ProjectDetails';
 import StarsBackground from './components/StarBackground/StarBackground';
 import CustomCursor from './components/CustomCursor/CustomCursor';
 import './styles.css';
+import './index.css';
+
 
 function App() {
   return (
