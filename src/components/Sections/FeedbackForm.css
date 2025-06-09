@@ -1,10 +1,9 @@
 .feedback-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 1000px;
-  margin: 50px auto;
-  padding: 2rem 4rem;
+  padding: 2rem;
   background: #37363628;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -17,6 +16,13 @@
   color: #94c7e5;
 }
 
+.feedback-success {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #5ff5b1;
+  font-weight: bold;
+}
+
 .feedback-form {
   display: flex;
   flex-direction: column;
@@ -26,11 +32,12 @@
 .name-fields {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .name-fields input {
-  flex: 1;
-  
+  flex: 1 1 45%;
+  min-width: 150px;
 }
 
 .feedback-form input,
@@ -38,8 +45,8 @@
   padding: 12px;
   border-radius: 10px;
   border: 1px solid #ccc;
-background-color: rgba(255, 255, 255, 0);
-color: rgba(242, 241, 241, 0.781);
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(242, 241, 241, 0.781);
   font-size: 1rem;
   transition: border 0.3s;
 }
@@ -49,21 +56,36 @@ color: rgba(242, 241, 241, 0.781);
   border-color: #007bff;
   background-color: transparent;
   outline: none;
-  
 }
 
 .submit-button {
   background-color: #344353;
   color: white;
-  width: 100px;
+  width: 120px;
   border: none;
   padding: 14px;
   font-size: 1rem;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  align-self: center;
 }
 
 .submit-button:hover {
   background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .feedback-section {
+    padding: 1rem;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
 }

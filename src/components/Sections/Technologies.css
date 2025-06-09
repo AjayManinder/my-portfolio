@@ -1,24 +1,18 @@
 .technologies {
-    height: 90vh;
+  height: auto;
+  min-height: 90vh;
   padding: 1rem 0.5rem;
   background: transparent;
-
+}
 
 .technologies h2 {
-  font-size: 2.0rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #1e293b;
+  color: #5187be;
   position: relative;
 }
-.tech-heading {
-    font-size: 2.0rem;
-    font-weight: 800;
-    color: #5187be;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    transition: color 0.3s ease;
-  }
+
 .technologies h2::after {
   content: '';
   position: absolute;
@@ -31,12 +25,20 @@
   border-radius: 2px;
 }
 
-.tech-category {
-  margin-bottom: 0.1rem;
-  background-color: #2d2e3022;
-    padding: 0.5rem 1rem;
-  border-radius: 20px;
+.tech-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #5187be;
+  margin-bottom: 1rem;
+  text-align: center;
+  transition: color 0.3s ease;
 }
+
+.tech-category {
+ 
+  background-color: #2d2e3022;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
 }
 
 .tech-category h3 {
@@ -52,7 +54,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
+  justify-content: center;
 }
+
 .tech-popup {
   position: absolute;
   top: -60px;
@@ -61,7 +65,7 @@
   background: #ffffffee;
   border-radius: 12px;
   padding: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   z-index: 10;
   width: 120px;
   text-align: center;
@@ -82,10 +86,9 @@
   border-radius: 10px 0 0 10px;
 }
 
-
 .tech-box {
   background-color: #e2e8f0;
-  padding: 0.2rem 0.5rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -103,18 +106,65 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
-  .tech-box {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
-    max-width: 150px;
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .technologies h2 {
+    font-size: 1.75rem;
   }
 
-  .tech-grid {
-    gap: 0.6rem;
+  .tech-heading {
+    font-size: 1.75rem;
   }
 
   .tech-category h3 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+  }
+
+  .tech-box {
+    font-size: 0.85rem;
+    max-width: 160px;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .tech-grid {
+    gap: 0.6rem;
+    justify-content: center;
+  }
+
+  .tech-box {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    max-width: 140px;
+  }
+
+  .tech-category h3 {
+    font-size: 1.2rem;
+  }
+
+  .technologies {
+    padding: 1rem;
+  }
+}
+
+/* Extra-small screens (phones in portrait) */
+@media (max-width: 480px) {
+  .tech-box {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+    max-width: 120px;
+  }
+
+  .tech-heading {
+    font-size: 1.5rem;
+  }
+
+  .technologies h2 {
+    font-size: 1.5rem;
+  }
+
+  .tech-category h3 {
+    font-size: 1rem;
   }
 }

@@ -1,62 +1,48 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import projectsData from '../ProjectsData/projectsData.json';
 import { Link } from 'react-router-dom';
+import { Github, ExternalLink } from 'lucide-react';
+import projectsData from '../ProjectsData/projectsData.json';
 import './section.css';
 
 const Projects = () => {
   return (
     <motion.section 
-      className="academic-projects"
+      className="academic-projects background-cards"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.h2
-        className="about-heading"
-        whileHover={{ scale: 1.05, color: "#a5b4fc" }}
-      >
+      <motion.h2 className="about-heading" whileHover={{ scale: 1.05, color: "#a5b4fc" }}>
         Professional Projects
       </motion.h2>
-
-      <div className="projects-grid">
+      <div className="projects-grid bg-card-grid">
         {projectsData.professionalProjects.map((project, index) => (
           <motion.div
             key={index}
-            className="project-card"
+            className="bg-project-card"
+            style={{ backgroundImage: `url(${project.image})` }}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, type: "spring" }}
-            whileHover={{ 
-              y: -5,
-              boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
-            }}
           >
-            <div className="project-card-content">
-              <div className="card-header">
-                <h3>{project.title}</h3>
-              </div>
-
-              <p className="project-duration"><strong>{project.duration}</strong></p>
-
-              <p className="project-preview">
-                {project.details[0].length > 100 
-                  ? `${project.details[0].substring(0, 100)}... `
-                  : `${project.details[0]} `
-                }
-              </p>
-
-              <div className="card-footer">
-                <motion.div
-                  className="view-more-btn"
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                >
-                  <Link to={`/projects/professional/${index}`}>
-                    View More
-                  </Link>
-                </motion.div>
+            <div className="bg-card-overlay">
+              <h3>{project.title}</h3>
+              <div className="bg-card-buttons">
+                <Link to={`/projects/professional/${index}`} className="view-btn">View More</Link>
+                <div className="icons">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github size={20} className="icon github-icon" />
+                    </a>
+                  )}
+                  {project.live && (
+                    <a href={project.live} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink size={20} className="icon live-icon" />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </motion.div>
@@ -66,4 +52,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Projects

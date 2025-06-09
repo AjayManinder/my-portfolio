@@ -1,9 +1,8 @@
 import React, { useLayoutEffect, useEffect,useState } from 'react';
-import { FaCloudDownloadAlt } from "react-icons/fa";
 import { GrLinkNext } from "react-icons/gr";
 import { useNavigate } from 'react-router-dom';
 import './ProfileCard.css'; 
-import Resume from "../../assets/Resume.docx";
+// import Resume from "../../assets/Resume.docx";
 import img from "../../assets/profile.jpg";
 
 const ProfileCard = () => {
@@ -35,7 +34,7 @@ const ProfileCard = () => {
           />
         </div>
         <h2 className='profile-name'>Ajay Maninder</h2>
-        <span className="profile-title">Full-Stack Developer</span>
+        <span className="profile-title">Full-Stack Software Developer</span>
       </div>
 
       <div className={`profile-content ${showProfile ? 'show-profile' : ''}`}>
@@ -48,7 +47,7 @@ const ProfileCard = () => {
           <span className="wave-animation">!</span>
         </h1>
         <p className="intro-text">
-        "I’m a full-stack developer passionate about building end-to-end solutions that drive innovation and efficiency. 
+        "I’m a full-stack Software developer passionate about building end-to-end solutions that drive innovation and efficiency. 
         I specialize in developing responsive web applications using modern front-end frameworks and scalable back-end architectures. 
         With expertise in AWS Cloud and machine learning, I design and deploy high-performance, cloud-native applications optimized for scalability and user experience."
         </p>

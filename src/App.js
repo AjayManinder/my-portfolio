@@ -11,6 +11,7 @@ import StarsBackground from './components/StarBackground/StarBackground';
 import CustomCursor from './components/CustomCursor/CustomCursor';
 import './styles.css';
 import './index.css';
+import Footer from './Footer/Footer';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
          <Route path="/professional-projects" element={<Projects />} />
          <Route path="/projects/:category/:id" element={<ProjectDetails />} />
         </Routes>
+        <Footer/>
    </div>
   );
 }

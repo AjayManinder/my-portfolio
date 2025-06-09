@@ -3,8 +3,7 @@
   padding: 20px;
   margin: 0px auto;
   /* max-width: 1100px; */
-  background: #fff;
-  background-color: #dce7ef;
+  color: #fff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -16,8 +15,6 @@
     padding: 10px; 
     background-color: #162533;
   }
-  
-  
   
   .title-container h2 {
     flex-grow: 1; 

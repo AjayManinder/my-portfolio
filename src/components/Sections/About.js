@@ -1,7 +1,8 @@
+// components/About.js
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
-import './section.css';
+import './About.css';
 
 const expertiseList = [
   "Building responsive UI with React.js, Next.js, and TypeScript.",
@@ -32,7 +33,7 @@ const About = () => {
           className="about-heading"
           whileHover={{ scale: 1.05, color: "#a5b4fc" }}
         >
-       Professional Summary  
+          Professional Summary
         </motion.h2>
 
         <motion.p className="about-description">
@@ -43,13 +44,7 @@ const About = () => {
           className="expertise-list"
           initial="hidden"
           animate="visible"
-          variants={{
-            visible: {
-              transition: {
-                staggerChildren: 0.1,
-              }
-            }
-          }}
+          variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
         >
           {expertiseList.map((item, idx) => (
             <motion.li

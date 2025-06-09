@@ -118,15 +118,12 @@ const Technologies = () => {
       viewport={{ once: false, amount: 0.3 }}
       variants={container}
     >
- <motion.h2
-          className="tech-heading"
-          whileHover={{ scale: 1.05, color: "#a5b4fc" }}
-        >
-      Technical Skills
-        </motion.h2>
+          <motion.h2 className="about-heading" whileHover={{ scale: 1.05, color: "#a5b4fc" }}>
+                Technical Skills
+              </motion.h2>
       {Object.entries(techStack).map(([category, technologies]) => (
         <div key={category} className="tech-category">
-          <h4 style={{color:"grey"}}>{category.charAt(0).toUpperCase() + category.slice(1)}</h4>
+          <h4 style={{color:"grey", textAlign:"center"}}>{category.charAt(0).toUpperCase() + category.slice(1)}</h4>
           <motion.div 
             className="tech-grid"
             variants={container}

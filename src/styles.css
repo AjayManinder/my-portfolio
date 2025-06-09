@@ -10,13 +10,14 @@ html, body, #root {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* overflow: hidden; Prevent unnecessary scrolling */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
   
 }
 
 .App {
-  min-height: 100vh; /* Ensure the App takes at least the full viewport height */
+  min-height: 100vh; 
   position: relative;
 }
 
@@ -32,10 +33,6 @@ h2{
 section {
   padding: 10px;
   margin: 10px auto;
-  max-width: 1100px;
-  
-  /* background: #fff;
-  background-color: #dce7ef; */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -43,15 +40,21 @@ section {
 section:hover {
   transform: translateY(-5px);
 }
-
-/* section + section {
-  border-top: 2px solid #ddd;
-} */
-
-section .about{
-  /* background-image: url("./assets/about.png"); */
-  color: white;
+.snap-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
+
+.snap-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 ul {
   list-style-type: none;
@@ -289,7 +292,6 @@ section .education{
 
 @media (max-width: 768px) {
   section {
-      margin: 10px;
       padding: 15px;
   }
 

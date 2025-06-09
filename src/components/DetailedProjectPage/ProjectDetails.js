@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+
 import { useParams } from 'react-router-dom';
 import projectsData from '../ProjectsData/projectsData.json'; 
 import "./ProjectDetails.css";
@@ -12,15 +13,14 @@ import Slider from 'react-slick';
 
 const ProjectDetails = () => {
 
-  useEffect(() => {
-    const scrollTimeout = setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 100); // Add a slight delay to ensure DOM is ready
-  
-    return () => clearTimeout(scrollTimeout); // Cleanup timeout
-  }, []);
+useEffect(() => {
+  const handle = setTimeout(() => {
+    document.querySelector('.project-details')?.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }, 600); // Give enough time for images and DOM to settle
+
+  return () => clearTimeout(handle);
+}, []);
   const navigate = useNavigate();
-  // Navigation: Only navigate back without fallback
   const goBack = () => {
     console.log("go back")
     navigate(-1); 
