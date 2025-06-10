@@ -21,6 +21,7 @@
           "By structuring the workflow into distinct React components, each component interacts with the backend and MongoDB, ensuring a modular, maintainable, and scalable application architecture. This approach enhances both functionality and user experience, leveraging React for frontend management and robust backend services for data processing and storage."
         ],
          "additional_Details2":[],
+          "image":"/images/a50.png",
         "video": null
       },
       {
@@ -41,6 +42,7 @@
           "Maintained a clean and updated codebase with Git version control, emphasizing cross-browser compatibility and code reusability. This approach ensured a robust and scalable application, capable of handling a high volume of transactions and providing an excellent user experience for the retail store’s customers."
         ],
          "additional_Details2":[],
+          "image":"/images/b200.png",
         "video": null
       }
     ],
@@ -85,8 +87,8 @@
 "/images/a19.png","/images/a20.png","/images/a21.png","/images/a22.png"],
         "repoLink": null,
         "video": null,
-        "image":"/images/a1.png",
-        "github":"/images/a1.png",
+        "image":"/images/a30.png",
+        "github":"https://github.com/AjayManinder/react-ui-student",
         "live":""
       },
       {
@@ -115,12 +117,12 @@
           "The interface includes a chat display that automatically scrolls to show the latest messages and an input section where users can type and send their messages."
          ],
         "video": null,
-        "image":"/images/b1.png",
-        "github":"/images/b1.png",
+        "image":"/images/b5.png",
+        "github":"https://github.com/AjayManinder/my-chat-bot",
         "live":""
       },
       {
-        "title": "Movie Suggestion Application (Automatic Deployment using AWS Amplify)",
+        "title": "Movie Suggestion Application (React + AWS Amplify)",
         "description": "Developed a single-page movie suggestion application using an open-source API with a collection of movies.",
         "details": [
           "Integrated the app with AWS Amplify and added the working repository to the AWS Amplify console for automatic deployment.",
@@ -136,8 +138,8 @@
          "additional_Details1":[],
          "additional_Details2":[],
         "video": null,
-        "image":"/images/c1.png",
-        "github":"/images/c1.png",
+        "image":"/images/c7.png",
+        "github":"https://github.com/AjayManinder/reactaws",
         "live":""
       }
     ],
@@ -168,8 +170,7 @@
           "For handling large datasets in the web application, we used ag-Grid for displaying and managing the policies and schemes used 'ag-Grid' library. This provides efficient sorting, filtering, and pagination, ensuring optimal performance when dealing with a large number of entries."
          ],
         "video": null,
-        "image":"/images/d1.png",
-        "github":"/images/a1.png",
+        "image":"/images/f10.png",
         "live":""
       }
     ]

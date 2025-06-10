@@ -139,7 +139,7 @@
 
 .view-btn {
   padding: 0.35rem 0.9rem;
-  background-color: #6c63ff;
+  background-color: #002149;
   color: white;
   border-radius: 8px;
   font-weight: 500;
@@ -149,7 +149,7 @@
 }
 
 .view-btn:hover {
-  background-color: #4f46e5;
+  background-color: #315377;
 }
 
 .icons {
